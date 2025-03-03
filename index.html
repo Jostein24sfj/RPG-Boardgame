@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quest for the Dragon's Treasure</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="./index.js" defer></script>
+    <style>
+      /* Basic styling for the game board */
+      table {
+        border-collapse: collapse;
+        margin: 20px auto;
+      }
+      td {
+        width: 60px;
+        height: 60px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      .player {
+        background-color: blue;
+        color: white;
+      }
+      .treasure {
+        background-color: gold;
+      }
+      .monster {
+        background-color: red;
+        color: white;
+      }
+      .door {
+        background-color: green;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid-container">
+      <h1>Quest for the Dragon's Treasure</h1>
+      <div>
+        <table id="gameBoard"></table>
+        <div id="playerStats"></div>
+        <div id="gameMessages"></div>
+      </div>
+    </div>
+
+    <script>
+      // Game board (2D array)
+      let gameBoard = [
+        ["", "", "T", "", ""],
+        ["M", "", "", "T", ""],
+        ["", "T", "M", "", ""],
+        ["", "", "", "M", ""],
+        ["", "M", "", "", "D"],
+      ];
+
+      // Player object
+      let player = {
+        x: 0, // Starting row
+        y: 0, // Starting column
+        health: 100,
+        inventory: [],
+        move: function (direction) {
+          // Implement movement logic
+        },
+        collectTreasure: function () {
+          // Implement treasure collection
+        },
+        fightMonster: function () {
+          // Implement monster encounter
+        },
+      };
+
+      // Function to render the game board
+      function renderBoard() {
+        // Use DOM manipulation to display the game board
+      }
+
+      // Function to update player stats
+      function updatePlayerStats() {
+        // Display player health and inventory
+      }
+
+      // Function to handle player movement
+      function handleKeyPress(event) {
+        // Implement logic to handle arrow key input
+      }
+
+      // Event listener for keypresses
+      document.addEventListener("keydown", handleKeyPress);
+
+      // Initial setup
+      renderBoard();
+      updatePlayerStats();
+    </script>
+  </body>
+</html>
