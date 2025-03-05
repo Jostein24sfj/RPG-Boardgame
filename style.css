@@ -8,6 +8,93 @@ body {
   background-color: rgb(77, 77, 77);
 }
 
+#grid-container {
+  min-height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr 5fr;
+}
+
+.inner-container {
+  display: grid;
+}
+
+.gameGrid {
+  display: grid;
+  justify-self: center;
+  grid-template-columns: repeat(5, 100px); /* Creates 5 columns */
+  grid-template-rows: repeat(5, 100px); /* Creates 5 rows */
+  gap: 8px; /* Adds space between grid items */
+}
+
+.grid-item {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  border: 1px solid #ddd;
+}
+
 h1 {
+  justify-self: center;
   color: rgb(198, 187, 112);
+  text-shadow: 1px 1px 8px;
+  padding-bottom: 24px;
+}
+
+p {
+  text-align: center;
+  font-size: 20px;
+  /* padding-top: 24px; */
+  /* padding-bottom: 16px; */
+  color: rgb(255, 255, 255);
+}
+
+.playerHealth {
+  color: red;
+}
+
+.playerInventory {
+  color: chartreuse;
+}
+
+.gameBoard {
+  display: grid;
+  border: 1px solid black;
+  border-radius: 12px;
+  justify-self: center;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+/* Basic styling for the game board */
+/* table {
+  border-collapse: collapse;
+  margin: 20px auto;
+}
+td {
+  width: 60px;
+  height: 60px;
+  border: 1px solid black;
+  text-align: center;
+} */
+
+.player {
+  background-color: blue;
+  color: white;
+}
+
+.treasure {
+  background-color: rgb(226, 204, 57);
+}
+.monster {
+  background-color: rgb(228, 0, 0);
+  color: white;
+}
+.door {
+  background-color: rgb(0, 133, 0);
+  color: white;
 }
